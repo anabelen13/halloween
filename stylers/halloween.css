@@ -1,0 +1,86 @@
+/*********** stylesheet for halloween ***********/
+/*********** esta pág no va a ser responsive ***********/
+
+@font-face {
+    font-family: halloween;
+    src: url(../fonts/Creepster-Regular.ttf);}
+
+body {background-color: #020214;
+      color: white;
+      font-family: halloween;}
+
+/* no es responsive, pq necesita el escenario entero, asi que
+   dimensiono el container con pixeles */
+#container {background-image: url("../images/backgroundTeams.jpg");
+            width:1920px;  /*fijo el ancho al de la imagen*/
+            height:1106px;  /*fijo el alto al de la imagen*/
+            margin:auto;
+            position:relative;  /*el container se mueve por la pantalla*/}
+
+#invitacion{font-family: halloween;
+       padding: 3px 10px;
+     border: rgb(157, 71, 238) 10px double;
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     border-top-right-radius: 20px;
+
+     color: black;
+     text-shadow: 5px 5px 5px red;
+       text-align: center;
+       font-size: 1.3em;
+       background-color: rgba(138, 72, 245, 0.082);
+       text-shadow: 7px 7px 7px rgd(201, 89, 89);
+       position: absolute;
+       top: 300px;
+       left: 600px;}
+
+#p1 {font-size: 5em;
+     color: rgb(12, 11, 11);
+     text-shadow: 5px 5px 5px red;
+     position:absolute;  /*fijo, clavado, dentro de su contenedor #container*/
+     top: 100px;
+     left: 590px;}
+
+
+#p2 {font-size: 1em;
+     color: rgb(138, 138, 138);
+     text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.363);
+     position: absolute;
+     top: 900px;
+     left: 1000px;
+     font-size: 1.5em;}
+
+#p3 {font-size: 1em;
+     color:rgb(138, 138, 138);
+     text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.363);
+     position: absolute;
+     top: 650px;
+     left: 300px;
+     font-size: 1.5em;}
+
+#bats {position: absolute;
+       top: 800px;
+       left: 1000px;
+       width: 200px;
+       visibility:hidden;}
+
+#ghost {position: absolute;
+        width: 150px;
+        top: 690px;
+        left: 250px;
+        visibility: hidden;}
+
+#skull {position: absolute;
+        width: 200px;
+        top: 800px;
+        left: 1000px;
+        width: 200px;
+        visibility: visible;}
+
+#pumpkin {position: absolute;
+          width: 150px;
+          top: 690px;
+          left: 250px;
+          width: 200px;
+          visibility: visible;}
