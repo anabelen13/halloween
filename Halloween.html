@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween Party</title>
+    <link rel="stylesheet" href="./stylers/halloween.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> 
+    <script scr="./javascripts/halloween.js"></script>
+</head>
+
+<body onloS="sonar('campanas')">
+    <!--saco el sonido fuera del container pq no va a 
+    tener nada visible (controles)-->
+
+    <audio id="misterio">
+        <source src="./sounds/misterio.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="presencia">
+        <source src="./sounds/presencia.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="campanas">
+        <source src="./sounds/campanas.mp3" type="audio/mpeg">
+    </audio>
+
+    <!--el layout básico incluye un container-->
+    <!--Esta pág no va a ser responsive-->
+    <div id="container">
+        <p id="p1">Scary Halloween Party</p>
+        <p id="p2">Don't touch the skull</p>
+        <p id="p3">Don't touch the pumpkin</p>
+        <div id="invitacion">
+            <h1>You are invited to my Halloween party!</h1>
+            <p>It will be at my house</p>
+            <p>31st October at 10:00pm</p>
+            <p>You will need to wear a costume, so get ready!</p>
+            <h2>We will have a great time!!</h2>
+        </div>
+
+        <img id="bats" src="./images/bats.gif" alt="">
+        <img id="ghost" src="./images/ghost.gif" alt="">
+
+        <div id="skull" onmouseover="mostrar('bats');sonar('misterio')"
+                          onmouseout="ocultar('bats');parar('misterio')"></div>
+
+        <div id="pumpkin" onmouseover="mostrar('ghost');sonar('presencia')"
+                          onmouseout="ocultar('ghost');parar('presencia')"></div>
+    </div>
+</body>
+</html>
